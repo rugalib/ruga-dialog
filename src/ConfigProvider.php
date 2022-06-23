@@ -18,7 +18,7 @@ class ConfigProvider
         return [
             //@todo This is currently ignored
             Dialog::class => [
-                Dialog::CONF_TEMPLATE => 'layout::ruga-dialog',
+                Dialog::CONF_TEMPLATE => 'layout::ruga-dialog-default',
             ],
             'templates' => [
                 'paths' => [
