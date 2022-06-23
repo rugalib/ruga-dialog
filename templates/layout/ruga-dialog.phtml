@@ -1,0 +1,15 @@
+<?php
+/** @var Laminas\View\Renderer\PhpRenderer $this */
+//@todo: automatically get language for html tag
+?>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <base href="<?= $this->basePath(); ?>"/>
+    <?= $this->headTitle('Test project')->setSeparator(' - ')->setAutoEscape(false) ?>
+</head>
+<body>
+<div id="content"><?= $this->content ?></div>
+<?= $this->inlineScript() ?>
+</body>
+</html>

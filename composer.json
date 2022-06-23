@@ -6,6 +6,7 @@
   "type": "library",
   "require": {
     "php": "^7.4",
+    "ext-json": "*",
     "laminas/laminas-json": "^3.3",
     "rugalib/ruga-asset": "^1.0",
     "rugalib/asset-jquery": "^3.6",
