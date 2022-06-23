@@ -16,7 +16,6 @@ class ConfigProvider
     public function __invoke()
     {
         return [
-            //@todo This is currently ignored
             Dialog::class => [
                 Dialog::CONF_TEMPLATE => 'layout::ruga-dialog-default',
             ],

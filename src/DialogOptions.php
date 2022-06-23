@@ -11,6 +11,7 @@ class DialogOptions implements DialogOptionsInterface, \JsonSerializable
     public function __construct()
     {
         $this->position = new \Laminas\Json\Expr('{ my: "center", at: "center", of: window }');
+        $this->ajaxRequestLayout = (new ConfigProvider())()[Dialog::class][Dialog::CONF_TEMPLATE];
     }
     
     
@@ -291,7 +292,7 @@ class DialogOptions implements DialogOptionsInterface, \JsonSerializable
     
     private ?string $ajaxUrl = null;
     private string $ajaxMethod = 'GET';
-    private string $ajaxRequestLayout = 'layout::ruga-dialog';
+    private string $ajaxRequestLayout = 'layout::ruga-dialog-default';
     private string $ajaxLoadingHtml = '...';
     
     
